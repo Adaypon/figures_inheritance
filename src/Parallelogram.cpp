@@ -8,7 +8,7 @@ Parallelogram::Parallelogram(double a, double b, double angle) {
 	_b = b;
 	_angle = angle;
 
-	// TODO assert 0 < angle < 180 
+	assert (angle > 0 && angle < 180);
 }
 
 double Parallelogram::calculateP() const {
